@@ -3,7 +3,7 @@ export default function Plants({ plants, addToCart }) {
     <div className="ordered-plants">
       {plants.map((plant) => (
         <div key={plant.id} className="plant">
-          <div>{plant.image}</div>
+          <div className="imagePlants">{plant.image}</div>
           <h2>{plant.name}</h2>
           <button onClick={() => addToCart(plant)}>Add to cart</button>
         </div>
