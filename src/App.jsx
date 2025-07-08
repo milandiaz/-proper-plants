@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import "./App.css";
+import "./index.css";
 import Cart from "../components/Cart";
 import Plants from "../components/Plants";
 import PLANTS from "./data";
@@ -46,10 +46,12 @@ function App() {
   };
 
   return (
-    <div>
-      <h1>Proper Plants</h1>
-      <h2>Plants</h2>
-      <Plants plants={PLANTS} addToCart={addToCart} />
+    <div className="container">
+      <div className="plants">
+        <h1>Proper Plants</h1>
+        <h2>Plants</h2>
+        <Plants plants={PLANTS} addToCart={addToCart} />
+      </div>
       <Cart cart={cart} addToCart={addToCart} removeCart={removeCart} />
     </div>
   );

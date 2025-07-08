@@ -1,6 +1,6 @@
 export default function Cart({ cart, addToCart, removeCart }) {
   return (
-    <div>
+    <div className="cart">
       <h2>Cart</h2>
       {cart.map((plant) => (
         <div key={plant.id}>

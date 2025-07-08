@@ -1,8 +1,8 @@
 export default function Plants({ plants, addToCart }) {
   return (
-    <div>
+    <div className="ordered-plants">
       {plants.map((plant) => (
-        <div key={plant.id}>
+        <div key={plant.id} className="plant">
           <div>{plant.image}</div>
           <h2>{plant.name}</h2>
           <button onClick={() => addToCart(plant)}>Add to cart</button>
