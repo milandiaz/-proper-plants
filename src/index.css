@@ -37,6 +37,10 @@ body {
   font-size: 1.3rem;
 }
 
+.plant button {
+  min-width: 150px;
+}
+
 .imagePlants {
   font-size: 5rem;
   text-align: center;
